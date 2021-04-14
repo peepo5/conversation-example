@@ -34,6 +34,7 @@
 				sortedcomments = convo.sort_comments(selected.id, comments);
 				localStorage.setItem('user-comments', JSON.stringify(comments));
 				comments = comments; //Force update so svelte detects change
+				message = "";
 		}
 	}
 
