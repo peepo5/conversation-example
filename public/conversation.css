@@ -1,0 +1,177 @@
+main {
+    max-width: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:20px;
+}
+
+.convo {
+    max-width: 700px;
+}
+
+.ib {
+    display: inline-block;
+    margin: 0px;
+}
+
+.convo .head{
+    color: var(--convo-head-color);
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.convo .commentcounter {
+    color: var(--convo-commentcounter-color);
+    padding-left: 10px;
+}
+
+.convo .namebox {
+    color: var(--convo-namebox-color);
+    border: 0px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    border-radius: 3px;
+}
+
+.convo .namebox:focus {
+    outline: none;
+    background: rgba(129, 129, 129, 0.1);
+}
+
+.convo .rule {
+    margin: 10px 0 10px 2px;
+    border-color: var(--convo-rule-color);
+}
+
+.convo .messagebox {
+    color: var(--convo-messagebox-color);
+    background-color: var(--convo-messagebox-background);
+    margin-top: 12px;
+    padding: 17px;
+    width: 95%;
+    border-radius:6px;
+    font-size:16px;
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    box-shadow: var(--convo-messagebox-shadow-color) 0px 8px 40px;
+}
+
+.convo .messagebox:focus {
+    box-shadow: var(--convo-messagebox-focus-shadow) 0px 8px 40px;
+}
+
+.convo ::placeholder {
+    color: var(--convo-messagebox-placeholder-color);
+    opacity: 0.3;
+}
+
+.convo .messagebox {
+    outline: none;
+}
+
+.convo .selector {
+    color: var(--convo-selector-color);
+    padding: 0px;
+    margin: 0 0 6px 0;
+    border: 0px;
+    font-size: 14px;
+    background: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 110px;
+    display: absolute;
+    position: relative;
+    
+}
+
+.convo .selectfather {
+    overflow: hidden;
+    background: linear-gradient(0deg, var(--selector-arrowopacity), var(--selector-arrowopacity)), url(ios-arrow-down.svg) 84% / 8% no-repeat;
+    filter: var(--svg-inv);
+    -webkit-filter: var(--svg-inv);
+    height: 35px;
+    width:130px;
+}
+
+.convo .selectoption {
+    color: var(--select-option-color);
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--select-option-background-color);
+    border: 10px solid black;
+}
+
+.convo .commentblock {
+    margin: 0 0 30px;
+}
+
+.convo .commenttime {
+    color: var(--convo-commenttime-color);
+    margin: -2px 0 0 0;
+    font-size: 14px;
+}
+
+.convo .commentmessage {
+    margin: 6px 0 0 0;
+}
+
+.convo .commentname {
+    color: var(--convo-commentname-color);
+    font-size: 14px;
+    margin: 0px;
+}
+
+:root {
+    --body-background: white;
+    --svg-inv: none;
+    --convo-head-color: #3f3f3f;
+    --convo-commentcounter-color: #a0a0a0;
+    --convo-namebox-color: #303030;
+    --convo-rule-color: #d8d8d8;
+
+    --convo-messagebox-color: #1b1b1b;
+    --convo-messagebox-placeholder-color: black;
+    --convo-messagebox-background: white;
+    --convo-messagebox-shadow-color: rgba(149, 157, 165, 0.18);
+    --convo-messagebox-focus-shadow: rgba(149, 157, 165, 0.35);
+
+    --convo-selector-color: #acacac;
+    --selector-arrowopacity: rgba(255, 255, 255, 0.7);
+    --select-option-background-color: #ffffff;
+    --select-option-color: #181818;
+
+    --convo-commenttime-color: #8a8a8a;
+    --convo-commentname-color: #292929;
+}
+
+[data-theme="dark"] {
+    --body-background: #0d0d0e;
+    --svg-inv: invert(100%);
+    --convo-head-color: #dadada;
+    --convo-commentcounter-color: #a0a0a0;
+    --convo-namebox-color: #dcddde;
+    --convo-rule-color: #bdbdbd;
+
+    --convo-messagebox-color: #dcddde;
+    --convo-messagebox-placeholder-color: #d8d8d8;
+    --convo-messagebox-background: #1a1a1a;
+    --convo-messagebox-shadow-color: rgba(30, 32, 34, 0);
+    --convo-messagebox-focus-shadow: rgba(30, 32, 34, 0);
+
+    --convo-selector-color: #585858;
+    --selector-arrowopacity: rgba(240, 240, 240, 0.7);
+    --select-option-background-color: #111111;
+    --select-option-color: #dbdbdb;
+
+    --convo-commenttime-color: grey;
+    --convo-commentname-color: #cacaca;
+}
+
+
+@media (min-width: 640px) {
+    
+}
